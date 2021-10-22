@@ -1,7 +1,5 @@
 const { Client, Intents, Collection, DiscordAPIError } = require('discord.js');
 const Discord = require('discord.js');
-import dotenv from 'dotenv';
-dotenv.config();
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
