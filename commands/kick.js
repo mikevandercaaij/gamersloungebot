@@ -6,9 +6,9 @@ module.exports = {
         if(member && message.member.permissions.has("KICK_MEMBERS")){
             const memberTarget = message.guild.members.cache.get(member.id);
             memberTarget.kick();
-            message.channel.send('User has been kicked');
+            message.channel.send(`${member} has been kicked.`);
         } else {
-            message.channel.send('You can\'t kick that member.');
+            message.channel.send('You don\'t have the permission to kick members.');
         }
     }
 }

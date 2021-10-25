@@ -6,9 +6,9 @@ module.exports = {
         if(member && message.member.permissions.has("BAN_MEMBERS")){
             const memberTarget = message.guild.members.cache.get(member.id);
             memberTarget.ban();
-            message.channel.send('User has been banned');
+            message.channel.send(`${member} has been banned`);
         } else {
-            message.channel.send('You can\'t ban that member.');
+            message.channel.send('You don\'t have the permission to ban members.');
         }
     }
 }

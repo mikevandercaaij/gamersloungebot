@@ -9,11 +9,13 @@
   "author": "Mike van der Caaij",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.23.0",
     "call-of-duty-api": "^2.1.2",
     "discord.js": "^13.2.0",
     "dotenv": "^10.0.0",
     "images-scraper": "^6.4.0",
-    "ms": "^2.1.3"
+    "ms": "^2.1.3",
+    "request-promise-native": "^1.0.9"
   },
   "keywords": [],
   "repository": {

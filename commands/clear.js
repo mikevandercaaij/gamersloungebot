@@ -11,11 +11,15 @@ module.exports = {
 
             if (args[0] < 1) return message.reply("You must delete atleast 1 message.");
 
-            await message.channel.messages.fetch({limit: args[0]}).then(messages => {
+            const deleteValue = parseInt(args[0]) + 1;
+
+            await message.channel.messages.fetch({limit: deleteValue}).then(messages => {
                 message.channel.bulkDelete((messages));
+                // console.log(deleteValue)
             });
-        } else {
-            message.channel.send('You\'re not allowed to use this command.');
-        }
+            
+            } else {
+                message.channel.send('You\'re not allowed to use this command.');
+            }
     }
 }
