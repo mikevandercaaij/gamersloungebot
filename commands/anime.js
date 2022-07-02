@@ -33,7 +33,7 @@ module.exports = {
                 if (mat.data[0].attributes.status === 'finished') {
                     mat.data[0].attributes.status = 'Finished Airing';
                 } else if (mat.data[0].attributes.status === 'current') {
-                    mat.data[0].attributes.status = 'Currenly Airing';
+                    mat.data[0].attributes.status = 'Currently Airing';
                 }
 
                 avgRating = (mat.data[0].attributes.averageRating / 10).toFixed(2);

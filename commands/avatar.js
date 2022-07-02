@@ -8,8 +8,7 @@ module.exports = {
         .setColor('#BF63DC')
         .setAuthor(`${user.username}'s Avatar`)
         .setImage(
-            `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=256`
-        );
+            `${user.displayAvatarURL({dynamic : true})}?size=256`);
         message.channel.send({ embeds: [avatarEmbed] });
     }
 }

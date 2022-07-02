@@ -1,29 +1,34 @@
 {
-  "name": "bot",
-  "version": "1.0.0",
-  "description": "discord bot",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mike van der Caaij",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.23.0",
-    "call-of-duty-api": "^2.1.2",
-    "discord.js": "^13.2.0",
-    "dotenv": "^10.0.0",
-    "images-scraper": "^6.4.0",
-    "ms": "^2.1.3",
-    "request-promise-native": "^1.0.9"
-  },
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mikevandercaaij/gamersloungebot.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mikevandercaaij/gamersloungebot/issues"
-  },
-  "homepage": "https://github.com/mikevandercaaij/gamersloungebot#readme"
+    "name": "bot",
+    "version": "1.0.0",
+    "description": "discord bot",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "Mike van der Caaij",
+    "license": "ISC",
+    "dependencies": {
+        "@iamtraction/google-translate": "^1.1.2",
+        "anime-images-api": "^2.0.0",
+        "axios": "^0.23.0",
+        "call-of-duty-api": "^2.1.2",
+        "discord.js": "^13.2.0",
+        "dotenv": "^10.0.0",
+        "google-translate-api": "^2.3.0",
+        "images-scraper": "^6.4.0",
+        "ms": "^2.1.3",
+        "random-animals-api": "^1.2.6",
+        "request-promise-native": "^1.0.9"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mikevandercaaij/gamersloungebot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mikevandercaaij/gamersloungebot/issues"
+    },
+    "homepage": "https://github.com/mikevandercaaij/gamersloungebot#readme"
 }

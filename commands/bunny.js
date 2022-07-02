@@ -2,24 +2,24 @@
 const animals = require('random-animals-api');
 
 module.exports = {
-    name: 'dog',
-    description: 'Random picture of a dog',
+    name: 'bunny',
+    description: 'Random picture of a bunny',
     execute(client, message, args, Discord) {
 
-        animals.dog()
+        animals.bunny()
         .then((res) => {
         //  console.log(res);
 
         let member = message.author.tag;
 
-        const dogEmbed = new Discord.MessageEmbed()
+        const bunnyEmbed = new Discord.MessageEmbed()
         .setColor('#BF63DC')
-        .setTitle('Random picture of a Dog')
+        .setTitle('Random picture of a Bunny')
         .setImage(`${res}`)
         .setTimestamp()
         .setFooter(`Requested by ${member}`, 'https://mikevandercaaij.nl/img/glIcon.png');
 
-        message.channel.send({ embeds: [dogEmbed] });
+        message.channel.send({ embeds: [bunnyEmbed] });
         message.delete();
 
         })

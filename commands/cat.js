@@ -1,15 +1,27 @@
-const axios = require('axios');
+// const axios = require('axios');
+const animals = require('random-animals-api');
 
 module.exports = {
     name: 'cat',
     description: 'Random picture of a cat',
     execute(client, message, args, Discord) {
 
-        axios.get('https://api.thecatapi.com/v1/images/search?format=json')
+        animals.cat()
         .then((res) => {
-        //  console.log('Res:', res.data[0].url)
-        message.channel.send(res.data[0].url)
+        //  console.log(res);
+
+        let member = message.author.tag;
+
+        const catEmbed = new Discord.MessageEmbed()
+        .setColor('#BF63DC')
+        .setTitle('Random picture of a Cat')
+        .setImage(`${res}`)
+        .setTimestamp()
+        .setFooter(`Requested by ${member}`, 'https://mikevandercaaij.nl/img/glIcon.png');
+
+        message.channel.send({ embeds: [catEmbed] });
         message.delete();
+
         })
         .catch((err) => {
             console.log(err);
